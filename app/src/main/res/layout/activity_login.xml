@@ -12,7 +12,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_logo"
         android:layout_width="164dp"
         android:layout_height="44dp"
         android:layout_marginTop="52dp"
@@ -24,7 +24,7 @@
         app:srcCompat="@drawable/logohorizontal" />
 
     <TextView
-        android:id="@+id/selamatDatang_tv"
+        android:id="@+id/tv_selamatDatang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/satoshi_regular"
@@ -38,11 +38,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo"
         app:layout_constraintVertical_bias="0.117" />
 
     <TextView
-        android:id="@+id/deskripsi_tv"
+        android:id="@+id/tv_deskripsi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/satoshi_medium"
@@ -52,49 +52,51 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selamatDatang_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_selamatDatang" />
 
     <TextView
-        android:id="@+id/user_tv"
+        android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/satoshi_medium"
         android:text="Email"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/email_et"
+        app:layout_constraintBottom_toTopOf="@+id/et_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/email_et"
+        android:id="@+id/et_email"
         android:layout_width="319dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:layout_marginTop="61dp"
         android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/password_et"
+        app:layout_constraintBottom_toTopOf="@+id/et_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selamatDatang_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_selamatDatang"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/password_tv"
+        android:id="@+id/tv_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/satoshi_medium"
         android:text="Password"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/password_et"
+        app:layout_constraintBottom_toTopOf="@+id/et_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/password_et"
+        android:id="@+id/et_password"
         android:layout_width="319dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:layout_marginTop="139dp"
         android:background="@drawable/rounded_edittext"
         android:ems="10"
@@ -102,10 +104,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selamatDatang_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_selamatDatang"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/forgotPass_tv"
+        android:id="@+id/tv_forgotPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -118,12 +121,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.861"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_et" />
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
     <Button
         android:id="@+id/btn_masuk"
         android:layout_width="319dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="31dp"
         android:background="@drawable/rounded_button"
@@ -132,7 +135,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgotPass_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_forgotPass" />
 
     <View
         android:id="@+id/line1"
@@ -165,5 +168,25 @@
         app:layout_constraintEnd_toStartOf="@+id/line2"
         app:layout_constraintStart_toEndOf="@+id/line1"
         app:layout_constraintTop_toBottomOf="@+id/btn_masuk" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_googleLogin"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/satoshi_regular"
+        android:text="@string/google"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:icon="@drawable/google_logo_9824"
+        app:iconSize="20dp"
+        app:iconTint="@color/common_google_signin_btn_text_light_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
