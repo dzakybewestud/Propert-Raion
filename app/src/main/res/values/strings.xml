@@ -3,4 +3,11 @@
     <string name="login">Login</string>
     <string name="logo">logo</string>
     <string name="google">Google</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="masuk_untuk_melanjutkan_kursus">Masuk untuk melanjutkan kursus</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="onboard1" />
+    <string name="skip">skip</string>
+    <string name="selanjutnya">Selanjutnya</string>
 </resources>

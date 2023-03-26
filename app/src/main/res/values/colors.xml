@@ -5,12 +5,16 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="black">#000000</color>
     <color name="white">#FFFFFFFF</color>
 
     <color name="primary_color">#1570EF</color>
+    <color name="primary_600">#0066DD</color>
+    <color name="primary_100">#F5FAFF</color>
+    <color name="primary_50">#EFF8FF</color>
     <color name="bg_color">#F4F9F9</color>
 
+<!--    bg gradient-->
     <color name="gradient_first">#53B1FD</color>
     <color name="gradient_second">#CFEAFF</color>
     <color name="gradient_third">#FFFFFF</color>
