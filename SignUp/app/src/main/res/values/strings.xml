@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dapatkan"><u>Dapatkan</u></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cari_pelatihan">Cari Pelatihan</string>
+
+    <string name="pelatihansaya">Pelatihan Saya</string>
+
+    <!--heading-->
+    <string name="head_1">Desain Grafis(Dasar)</string>
+    <string name="head_2">Teknik MUA</string>
+    <string name="head_3">Improve Your English Skill</string>
+</resources>
