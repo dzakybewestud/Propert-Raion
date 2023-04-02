@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="biru_25">#F5FAFF</color>
+    <color name="biru_50">#EFF8FF</color>
+    <color name="biru_100">#F5FAFF</color>
+    <color name="biru_200">#B2DDFF</color>
+    <color name="biru_300">#84CAFF</color>
+    <color name="biru_400">#53B1FD</color>
+    <color name="biru_500">#2E90FA</color>
+    <color name="biru_600">#1570EF</color>
+    <color name="biru_700">#175CD3</color>
+    <color name="biru_800">#1849A9</color>
+    <color name="biru_900">#194185</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="biruu">#364152</color>
+    <color name="textmasuk">#0066DD</color>
+    <color name="price">#FF7C03</color>
+</resources>
