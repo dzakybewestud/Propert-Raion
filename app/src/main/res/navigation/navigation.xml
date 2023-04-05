@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/beranda">
+
+    <fragment
+        android:id="@+id/beranda"
+        android:name="com.arvan.signup.beranda"
+        android:label="fragment_beranda"
+        tools:layout="@layout/fragment_beranda" >
+        <action
+            android:id="@+id/action_beranda_to_mycourse"
+            app:destination="@id/mycourse" />
+    </fragment>
+    <fragment
+        android:id="@+id/mycourse"
+        android:name="com.arvan.signup.Mycourse"
+        android:label="fragment_mycourse"
+        tools:layout="@layout/fragment_mycourse" >
+        <action
+            android:id="@+id/action_mycourse_to_akun2"
+            app:destination="@id/akun2" />
+    </fragment>
+    <fragment
+        android:id="@+id/akun2"
+        android:name="com.arvan.signup.akun"
+        android:label="fragment_akun"
+        tools:layout="@layout/fragment_akun" >
+        <action
+            android:id="@+id/action_akun2_to_myAcc"
+            app:destination="@id/myAcc" />
+        <action
+            android:id="@+id/action_akun2_to_mycourse"
+            app:destination="@id/mycourse" />
+    </fragment>
+    <fragment
+        android:id="@+id/myAcc"
+        android:name="com.arvan.signup.MyAcc"
+        android:label="fragment_my_acc"
+        tools:layout="@layout/fragment_my_acc" >
+        <action
+            android:id="@+id/action_myAcc_to_akun2"
+            app:destination="@id/akun2" />
+    </fragment>
+    <activity
+        android:id="@+id/homePageActivity"
+        android:name="com.arvan.signup.HomePageActivity"
+        android:label="activity_homepage"
+        tools:layout="@layout/activity_homepage" />
+</navigation>

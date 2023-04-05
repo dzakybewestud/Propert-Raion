@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Beranda"
+        android:id="@+id/home"
+       android:icon="@drawable/home_btn"
+        />
+    <item android:title="Pelatihan Saya"
+        android:id="@+id/course"
+        android:icon="@drawable/search_btn"
+        />
+    <item android:title="Akun"
+        android:id="@+id/akun"
+        android:icon="@drawable/profile_btn"
+        />
+</menu>
