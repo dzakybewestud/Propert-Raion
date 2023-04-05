@@ -5,4 +5,6 @@
         android:centerColor="@color/gradient_second"
         android:endColor="@color/gradient_third"
         android:angle="100"/>
+
+
 </shape>
