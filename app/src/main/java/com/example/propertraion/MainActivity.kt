@@ -22,18 +22,18 @@ class MainActivity : AppCompatActivity() {
     private val introSliderAdapter = IntroSliderAdapter(
         listOf(
             IntroSlide(
-                "First Page",
-                "1 Desc",
+                "Pelatihan disesuaikan dengan Kebutuhan Kerja",
+                "Kurikulum Propert menyesuaikan dengan posisi pekerjaan dan level keahlian, kamu dapat memperoleh keterampilan yang sesuai dengan tujuan karir kamu.",
                 R.drawable.onboard1
             ),
             IntroSlide(
-                "Second Page",
-                "2 Desc",
+                "Pelatihan Interaktif",
+                "Kamu dapat belajar dengan interaktif dengan video yang menarik, tutor yang asik dan tutor yang memberikan penjelasan yang sangat lengkap!",
                 R.drawable.onboard2
             ),
             IntroSlide(
-                "Third Page",
-                "3 Desc",
+                "Belajar di mana saja dan kapan saja",
+                "Kamu dapat mengakses course di mana saja dan kapan saja secara flexible!",
                 R.drawable.onboard3
             )
         )
@@ -56,7 +56,6 @@ class MainActivity : AppCompatActivity() {
         })
 
         btn_selanjutnya = findViewById(R.id.btn_selanjutnya)
-
         btn_selanjutnya.setOnClickListener {
             if (introSliderViewPager.currentItem + 1 < introSliderAdapter.itemCount) {
                 introSliderViewPager.currentItem += 1
@@ -66,7 +65,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-        tv_skip = findViewById(R.id.tv_skip)
+        tv_skip = findViewById(R.id.tv_lewati)
         tv_skip.setOnClickListener{
             Intent(applicationContext, LoginActivity::class.java).also {
                 startActivity(it)

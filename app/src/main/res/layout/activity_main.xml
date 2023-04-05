@@ -8,45 +8,66 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tv_skip"
+        android:id="@+id/tv_lewati"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="70dp"
-        android:fontFamily="@font/satoshi_medium"
-        android:text="@string/skip"
+        android:fontFamily="@font/satoshi_regular"
+        android:text="Lewati"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introSliderViewPager"
+        app:layout_constraintVertical_bias="1.0" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_selanjutnya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/satoshi_medium"
-        android:minWidth="110dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="56dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/satoshi_bold"
+        android:foregroundGravity="bottom"
+        android:letterSpacing="0"
+        android:pointerIcon="arrow"
         android:text="@string/selanjutnya"
-        app:layout_constraintBottom_toTopOf="@id/tv_skip"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_600"
+        android:textSize="14sp"
+        app:icon="@drawable/right_arrow"
+        app:iconGravity="textEnd"
+        app:iconSize="12dp"
+        app:iconTint="@color/primary_600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
         android:id="@+id/indicatorsContainer"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/btn_selanjutnya" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introSliderViewPager" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/introSliderViewPager"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="12dp"
+        android:layout_height="556dp"
+        android:layout_marginBottom="71dp"
         android:overScrollMode="never"
-        app:layout_constraintBottom_toTopOf="@id/indicatorsContainer"
+        app:layout_constraintBottom_toTopOf="@+id/btn_selanjutnya"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 

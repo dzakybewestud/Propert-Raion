@@ -8,24 +8,28 @@
 
     <ImageView
         android:id="@+id/imageSlideIcon"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_width="414dp"
+        android:layout_height="289dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="30dp"
         android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/textTitle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:fontFamily="@font/satoshi_regular"
+        android:layout_width="318dp"
+        android:layout_height="64dp"
+        android:layout_margin="25dp"
+        android:fontFamily="@font/satoshi_bold"
         android:gravity="center"
         android:text="Title Text"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/primary_600"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textDescription"
@@ -35,15 +39,17 @@
 
     <TextView
         android:id="@+id/textDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_width="318dp"
+        android:layout_height="96dp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/satoshi_regular"
         android:gravity="center"
         android:text="Description Text"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 

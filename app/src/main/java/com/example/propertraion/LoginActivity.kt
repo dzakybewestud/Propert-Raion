@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
         btn_login.setOnClickListener {
             if (username.text.toString() == "user" && password.text.toString() == "1234"){
                 Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, ProfileActivity::class.java)
+                val intent = Intent(this, DetailCourseActivity::class.java)
                 startActivity(intent)
             } else {
                 Toast.makeText(this, "failed", Toast.LENGTH_SHORT).show()
