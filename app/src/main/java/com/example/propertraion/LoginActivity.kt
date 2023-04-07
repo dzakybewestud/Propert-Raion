@@ -31,6 +31,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+
+
         btn_login = findViewById(R.id.btn_masuk)
         username = findViewById(R.id.et_email)
         password = findViewById(R.id.et_password)
@@ -39,13 +41,8 @@ class LoginActivity : AppCompatActivity() {
 
 
         btn_login.setOnClickListener {
-            if (username.text.toString() == "user" && password.text.toString() == "1234"){
-                Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, DetailCourseActivity::class.java)
-                startActivity(intent)
-            } else {
-                Toast.makeText(this, "failed", Toast.LENGTH_SHORT).show()
-            }
+            val intent = Intent(this, DetailCourseActivity::class.java)
+            startActivity(intent)
         }
 
         auth = FirebaseAuth.getInstance()

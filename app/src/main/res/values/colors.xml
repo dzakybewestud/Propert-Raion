@@ -12,6 +12,7 @@
     <color name="primary_600">#0066DD</color>
     <color name="primary_100">#F5FAFF</color>
     <color name="primary_50">#EFF8FF</color>
+    <color name="primary_25">#F5FAFF</color>
     <color name="bg_color">#F4F9F9</color>
 
 <!--    bg gradient-->

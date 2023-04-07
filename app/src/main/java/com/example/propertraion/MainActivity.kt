@@ -41,6 +41,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
         introSliderViewPager = findViewById(R.id.introSliderViewPager)
         introSliderViewPager.adapter = introSliderAdapter
         setupIndicators()
