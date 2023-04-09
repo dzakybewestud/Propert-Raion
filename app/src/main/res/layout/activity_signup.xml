@@ -180,10 +180,37 @@
         android:paddingRight="10dp"/>
 
 
+<<<<<<< Updated upstream
+=======
+    <TextView
+        android:id="@+id/tv_spa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:fontFamily="@font/satoshiz_regular"
+        android:text="Sudah mempunyai akun?"
+        app:layout_constraintBaseline_toBaselineOf="@+id/intentmasuk"
+        app:layout_constraintStart_toStartOf="@+id/btn_google"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/intentmasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/satoshi_medium"
+        android:text="Masuk"
+        android:textColor="@color/textmasuk"
+        app:layout_constraintStart_toEndOf="@+id/tv_spa"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fb" />
+
+>>>>>>> Stashed changes
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< Updated upstream
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -196,6 +223,66 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="17sp" />
+=======
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/reg_button"
+        android:fontFamily="@font/satoshi_medium"
+        android:text="Daftar"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/frame_google"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/logo_google"
+        android:fontFamily="@font/satoshiz_regular"
+        android:paddingLeft="20sp"
+        android:text="Google"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:cornerRadius="90dp"
+        app:icon="@drawable/logo_google"
+        app:iconGravity="textStart"
+        app:iconSize="20dp"
+        app:iconTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_daftar" />
+
+    <Button
+        android:id="@+id/btn_fb"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/frame_fb"
+        android:backgroundTint="#3C5A9A"
+        android:drawableLeft="@drawable/logo_fb"
+        android:fontFamily="@font/satoshiz_regular"
+        android:paddingLeft="20sp"
+        android:text="Facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="90dp"
+        app:icon="@drawable/logo_fb"
+        app:iconGravity="textStart"
+        app:iconSize="20dp"
+        app:iconTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_daftar" />
+>>>>>>> Stashed changes
 
     <TextView
         android:id="@+id/textView"
