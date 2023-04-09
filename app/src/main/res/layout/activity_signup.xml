@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".SignupActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="139.53dp"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="54dp"
+        app:srcCompat="@drawable/logo" />
+
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="305dp"
+        android:layout_height="238dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="61dp"
+        app:srcCompat="@drawable/frame1"/>
+
+    <LinearLayout
+        android:id="@+id/ly_1"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:layout_below="@id/image3"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="190dp"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+
+        <Button
+            android:id="@+id/btn_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="43dp"
+            android:background="@color/white"
+            android:fontFamily="@font/satoshiz_regular"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="258dp"
+        android:layout_marginEnd="-188dp"
+        android:fontFamily="@font/satoshiz_regular"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="1sp"
+        android:text="Full Name"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fullname"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="475dp"
+        android:autofillHints=""
+        android:background="@drawable/inputtext"
+        android:minHeight="48dp"
+        app:passwordToggleEnabled="true"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="343dp"
+        android:layout_marginEnd="101dp"
+        android:fontFamily="@font/satoshiz_regular"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="1sp"
+        android:text="Email"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/et_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_email"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="554dp"
+        android:autofillHints=""
+        android:background="@drawable/inputtext"
+        android:minHeight="48dp"
+        app:passwordToggleEnabled="true"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="422dp"
+        android:layout_marginEnd="101dp"
+        android:fontFamily="@font/satoshiz_regular"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="1sp"
+        android:text="Password"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/btn_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_password"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="389dp"
+        android:autofillHints=""
+        android:background="@drawable/inputtext"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        android:drawableRight="@drawable/hidepass"
+        android:paddingRight="10dp"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="249dp"
+        android:background="@drawable/reg_button"
+        android:fontFamily="@font/satoshi_medium"
+        android:text="Daftar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="110dp"
+        android:layout_height="18dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="213dp"
+        android:fontFamily="@font/satoshiz_regular"
+        android:text="atau daftar dengan" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="619dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/line"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="618dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginBottom="130dp"
+        android:fontFamily="@font/satoshiz_regular"
+        android:text="Sudah mempunyai akun?"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="129dp"
+        android:fontFamily="@font/satoshi_bold"
+        android:text="Masuk"
+        android:textAllCaps="false"
+        android:textColor="@color/biru_600"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="169dp"
+        android:background="@drawable/frame_google"
+        android:drawableStart="@drawable/logo_google"
+        android:paddingHorizontal="20dp"
+        android:text="Google"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="212dp"
+        android:layout_marginBottom="170dp"
+        android:background="@drawable/frame_fb"
+        android:drawableStart="@drawable/logo_fb"
+        android:paddingHorizontal="20dp"
+        android:text="Facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
+

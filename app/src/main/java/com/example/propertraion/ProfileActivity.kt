@@ -17,6 +17,8 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
+
+
         auth = FirebaseAuth.getInstance()
 
         val email = intent.getStringExtra("email")
