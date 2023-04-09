@@ -29,19 +29,18 @@ class SignupActivity : AppCompatActivity() {
         fullname.setOnClickListener {
             val fullNameEditText = findViewById<EditText>(R.id.et_fn)
             val fullName = fullNameEditText.text.toString()
-            Toast.makeText(this, "Nama Lengkap: $fullName", Toast.LENGTH_SHORT).show()
+
         }
 
         email.setOnClickListener {
             val emailEditText = findViewById<EditText>(R.id.et_email)
             val email = emailEditText.text.toString()
-            Toast.makeText(this, "Email: $email", Toast.LENGTH_SHORT).show()
+
         }
 
         password.setOnClickListener {
             val passwordEditText = findViewById<EditText>(R.id.et_password)
             val password = passwordEditText.text.toString()
-            Toast.makeText(this, "Password: $password", Toast.LENGTH_SHORT).show()
         }
 
         registerButton.setOnClickListener {
@@ -71,9 +70,9 @@ class SignupActivity : AppCompatActivity() {
             }
             Toast.makeText(this, "Pendaftaran berhasil", Toast.LENGTH_SHORT).show()
 
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this,HomePageActivity::class.java)
             startActivity(intent)
-            finish()
+
         }
     }
 }

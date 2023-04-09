@@ -4,341 +4,372 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".akun">
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    tools:context=".Akun">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="389dp"
-            android:layout_height="61dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="440dp"
-            tools:ignore="MissingConstraints">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="389dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="124dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+                tools:ignore="MissingConstraints">
 
 
-            <!--            <Button-->
-            <!--                android:layout_width="41dp"-->
-            <!--                android:layout_height="46dp"-->
-            <!--                android:layout_marginEnd="16dp"-->
-            <!--                android:background="@color/biru_25"-->
-            <!--                android:drawableRight="@drawable/baseline_arrow_forward_24"-->
-            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--                app:layout_constraintEnd_toEndOf="parent"-->
-            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+                <!--            <Button-->
+                <!--                android:layout_width="41dp"-->
+                <!--                android:layout_height="46dp"-->
+                <!--                android:layout_marginEnd="16dp"-->
+                <!--                android:background="@color/biru_25"-->
+                <!--                android:drawableRight="@drawable/baseline_arrow_forward_24"-->
+                <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+                <ImageView
+                    android:id="@+id/arrow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon3"
+                    android:layout_width="34dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="343dp"
+                    android:src="@drawable/icon3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.482" />
+
+                <TextView
+                    android:id="@+id/tv_akun3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="162dp"
+                    android:fontFamily="@font/satoshi_regular"
+                    android:text="Sertifikat Saya"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/arrow3"
+                    app:layout_constraintStart_toEndOf="@+id/icon3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <ImageView
-                android:id="@+id/arrow3"
+                android:id="@+id/bg"
+                android:layout_width="409dp"
+                android:layout_height="302dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="47dp"
+                android:src="@drawable/bg_akun"
+                app:layout_constraintBottom_toTopOf="@+id/pic_prof1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.298"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="389dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/displayname"
+                tools:ignore="MissingConstraints">
+
+
+                <ImageView
+                    android:id="@+id/arrow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon1"
+                    android:layout_width="34dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="343dp"
+                    android:src="@drawable/icon1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.482" />
+
+                <TextView
+                    android:id="@+id/tv_akun1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="190dp"
+                    android:fontFamily="@font/satoshi_regular"
+                    android:text="Akun Saya"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/arrow1"
+                    app:layout_constraintStart_toEndOf="@+id/icon1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.421" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/pic_prof1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:src="@drawable/baseline_arrow_forward_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/icon3"
-                android:layout_width="34dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="343dp"
-                android:src="@drawable/icon3"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="108dp"
+                android:layout_marginBottom="25dp"
+                android:src="@drawable/pic_prof1"
+                app:layout_constraintBottom_toTopOf="@+id/displayname"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.482" />
+                tools:ignore="MissingConstraints" />
 
             <TextView
-                android:id="@+id/tv_akun3"
+                android:id="@+id/displayname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:fontFamily="@font/satoshiz_regular"
-                android:text="Sertifikat Saya"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/satoshi_medium"
+                android:text="Rafli Ardiansyah"
                 android:textColor="@color/black"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/icon3"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textSize="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/displayemail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bg"
+                tools:ignore="MissingConstraints" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <ImageView
-            android:id="@+id/bg"
-            android:layout_width="409dp"
-            android:layout_height="302dp"
-            android:layout_marginEnd="4dp"
-            android:src="@drawable/bg_akun"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="-96dp"
-            tools:ignore="MissingConstraints" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
-            android:layout_width="389dp"
-            android:layout_height="61dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="316dp">
-
-
-            <!--            <Button-->
-            <!--                android:layout_width="41dp"-->
-            <!--                android:layout_height="46dp"-->
-            <!--                android:layout_marginEnd="16dp"-->
-            <!--                android:background="@color/biru_25"-->
-            <!--                android:drawableRight="@drawable/baseline_arrow_forward_24"-->
-            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--                app:layout_constraintEnd_toEndOf="parent"-->
-            <!--                app:layout_constraintTop_toTopOf="parent" />-->
-
-            <ImageView
-                android:id="@+id/arrow1"
+            <TextView
+                android:id="@+id/displayemail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:src="@drawable/baseline_arrow_forward_24"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="13dp"
+                android:fontFamily="@font/satoshi_regular"
+                android:text="rapli@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/displayname"
+                tools:ignore="MissingConstraints" />
 
-            <ImageView
-                android:id="@+id/icon1"
-                android:layout_width="34dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="343dp"
-                android:src="@drawable/icon1"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout6"
+                android:layout_width="389dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="312dp"
+                android:layout_marginBottom="96dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.482" />
-
-            <TextView
-                android:id="@+id/tv_akun1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:fontFamily="@font/satoshiz_regular"
-                android:text="Akun Saya"
-                android:textColor="@color/black"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/icon1"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.421" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <ImageView
-            android:id="@+id/pic_prof1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/pic_prof1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="87dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/displayname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rafli Ardiansyah"
-            android:fontFamily="@font/satoshi_medium"
-            android:textColor="@color/black"
-            android:textSize="24dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="244dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/displayemail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
-            android:layout_marginBottom="13dp"
-            android:fontFamily="@font/satoshiz_regular"
-            android:text="rapli@gmail.com"
-            android:textColor="@color/black"
-            android:textSize="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/displayname"
-            tools:ignore="MissingConstraints" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="389dp"
-            android:layout_height="61dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="561dp"
-            tools:ignore="MissingConstraints">
+                app:layout_constraintTop_toBottomOf="@+id/pic_prof1"
+                tools:ignore="MissingConstraints">
 
 
-            <!--            <Button-->
-            <!--                android:layout_width="41dp"-->
-            <!--                android:layout_height="46dp"-->
-            <!--                android:layout_marginEnd="16dp"-->
-            <!--                android:background="@color/biru_25"-->
-            <!--                android:drawableRight="@drawable/baseline_arrow_forward_24"-->
-            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--                app:layout_constraintEnd_toEndOf="parent"-->
-            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+                <!--            <Button-->
+                <!--                android:layout_width="41dp"-->
+                <!--                android:layout_height="46dp"-->
+                <!--                android:layout_marginEnd="16dp"-->
+                <!--                android:background="@color/biru_25"-->
+                <!--                android:drawableRight="@drawable/baseline_arrow_forward_24"-->
+                <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
-            <ImageView
-                android:id="@+id/arrow5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:src="@drawable/baseline_arrow_forward_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/arrow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/icon5"
-                android:layout_width="34dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="343dp"
-                android:src="@drawable/icon5"
-                app:layout_constraintBottom_toBottomOf="parent"
+                <ImageView
+                    android:id="@+id/icon5"
+                    android:layout_width="34dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="343dp"
+                    android:src="@drawable/icon5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.482" />
+
+                <TextView
+                    android:id="@+id/tv_akun5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="223dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/satoshi_regular"
+                    android:text="Keluar"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/arrow5"
+                    app:layout_constraintStart_toEndOf="@+id/icon5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="389dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="3dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.482" />
-
-            <TextView
-                android:id="@+id/tv_akun5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="@font/satoshiz_regular"
-                android:text="Keluar"
-                android:textColor="@color/black"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/icon5" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="389dp"
-            android:layout_height="61dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="380dp"
-            tools:ignore="MissingConstraints">
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+                tools:ignore="MissingConstraints">
 
 
-            <ImageView
-                android:id="@+id/arrow2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:src="@drawable/baseline_arrow_forward_24"
-                app:layout_constraintBottom_toBottomOf="parent"
+                <ImageView
+                    android:id="@+id/arrow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    android:layout_width="34dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="343dp"
+                    android:src="@drawable/icon2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.482" />
+
+                <TextView
+                    android:id="@+id/tv_akun2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="186dp"
+                    android:fontFamily="@font/satoshi_regular"
+                    android:text="Pesananku"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/arrow2"
+                    app:layout_constraintStart_toEndOf="@+id/icon2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.578" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="389dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="216dp"
+                android:layout_marginBottom="3dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/icon2"
-                android:layout_width="34dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="343dp"
-                android:src="@drawable/icon2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.482" />
-
-            <TextView
-                android:id="@+id/tv_akun2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:fontFamily="@font/satoshiz_regular"
-                android:text="Pesananku"
-                android:textColor="@color/black"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/icon2"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.578" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="389dp"
-            android:layout_height="61dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="500dp"
-            tools:ignore="MissingConstraints">
+                app:layout_constraintTop_toBottomOf="@+id/displayname"
+                tools:ignore="MissingConstraints">
 
 
-            <!--            <Button-->
-            <!--                android:layout_width="41dp"-->
-            <!--                android:layout_height="46dp"-->
-            <!--                android:layout_marginEnd="16dp"-->
-            <!--                android:background="@color/biru_25"-->
-            <!--                android:drawableRight="@drawable/baseline_arrow_forward_24"-->
-            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--                app:layout_constraintEnd_toEndOf="parent"-->
-            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+                <!--            <Button-->
+                <!--                android:layout_width="41dp"-->
+                <!--                android:layout_height="46dp"-->
+                <!--                android:layout_marginEnd="16dp"-->
+                <!--                android:background="@color/biru_25"-->
+                <!--                android:drawableRight="@drawable/baseline_arrow_forward_24"-->
+                <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
-            <ImageView
-                android:id="@+id/arrow4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:src="@drawable/baseline_arrow_forward_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/arrow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/icon4"
-                android:layout_width="34dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="343dp"
-                android:src="@drawable/icon4"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.482" />
+                <ImageView
+                    android:id="@+id/icon4"
+                    android:layout_width="34dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="343dp"
+                    android:src="@drawable/icon4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.482" />
 
-            <TextView
-                android:id="@+id/tv_akun4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:fontFamily="@font/satoshiz_regular"
-                android:text="Bagikan Aplikasi Propert"
-                android:textColor="@color/black"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/icon4"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.421" />
+                <TextView
+                    android:id="@+id/tv_akun4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="80dp"
+                    android:fontFamily="@font/satoshi_regular"
+                    android:text="Bagikan Aplikasi Propert"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/arrow4"
+                    app:layout_constraintStart_toEndOf="@+id/icon4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.421" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
 
-</FrameLayout>

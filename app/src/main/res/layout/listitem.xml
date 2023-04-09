@@ -2,125 +2,174 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_marginHorizontal="8dp"
     android:background="@color/white"
     android:paddingTop="8dp">
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/title_image"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/a"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvHeading"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="@font/satoshi_medium"
-        android:text="@string/head_1"
-        android:textColor="@color/black"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/title_image"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/rating1"
-        android:layout_width="129dp"
-        android:layout_height="20dp"
-        android:fontFamily="@font/satoshiz_regular"
-        android:text="☆4.9(189)"
-        android:textSize="13dp"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="30dp" />
-
-
-    <TextView
-        android:id="@+id/price1"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:fontFamily="@font/satoshi_bold"
-        android:text="Rp. 100.000"
-        android:textColor="@color/price"
-        app:layout_constraintStart_toEndOf="@+id/title_image"
-        tools:layout_editor_absoluteY="69dp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="8dp"
-        android:background="@color/white"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="392dp"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title_image" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+        <TextView
+            android:id="@+id/rating3"
+            android:layout_width="129dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginEnd="144dp"
+            android:fontFamily="@font/satoshi_regular"
+            android:text="☆4.6(91)"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/title_image3"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeading3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/title_image3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/c"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <TextView
+            android:id="@+id/price3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="71dp"
+            android:layout_marginEnd="193dp"
+            android:layout_marginBottom="9dp"
+            android:fontFamily="@font/satoshi_bold"
+            android:text="Rp. 165.000"
+            android:textColor="@color/price"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toEndOf="@+id/title_image3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHeading3"
+            android:layout_width="202dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/satoshi_medium"
+            android:text="@string/head_3"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/title_image3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:id="@+id/constraintLayout7"
+        android:layout_width="373dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="106dp">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout9"
+        tools:ignore="MissingConstraints">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/title_image2"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/b"
+            app:layout_constraintEnd_toStartOf="@+id/tvHeading2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvHeading2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="32dp"
+            android:layout_width="97dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginBottom="8dp"
             android:fontFamily="@font/satoshi_medium"
             android:text="@string/head_2"
             android:textColor="@color/black"
             android:textSize="16dp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/rating2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/title_image2"
-            tools:layout_editor_absoluteY="0dp" />
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/rating2"
             android:layout_width="129dp"
             android:layout_height="20dp"
-            android:fontFamily="@font/satoshiz_regular"
+            android:layout_marginEnd="144dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/satoshi_regular"
             android:text="☆4.2(129)"
             android:textSize="13dp"
-            tools:layout_editor_absoluteX="96dp"
-            tools:layout_editor_absoluteY="30dp" />
+            app:layout_constraintBottom_toTopOf="@+id/price2"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/price2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:layout_marginEnd="195dp"
             android:fontFamily="@font/satoshi_bold"
             android:text="Rp. 250.000"
             android:textColor="@color/price"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/title_image2"
-            tools:layout_editor_absoluteY="61dp" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.802" />
 
         <View
+            android:id="@+id/view2"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_margin="8dp"
@@ -132,63 +181,73 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/constraintLayout9"
+        android:layout_width="372dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="4dp"
+        android:elevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="219dp">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/title_image3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/c"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/rating3"
-            android:layout_width="129dp"
-            android:layout_height="20dp"
-            android:fontFamily="@font/satoshiz_regular"
-            android:text="☆4.6(91)"
-            android:textSize="13dp"
-            tools:layout_editor_absoluteX="96dp"
-            tools:layout_editor_absoluteY="30dp" />
-
-        <TextView
-            android:id="@+id/price3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:fontFamily="@font/satoshi_bold"
-            android:text="Rp. 165.000"
-            android:textColor="@color/price"
-            app:layout_constraintStart_toEndOf="@+id/title_image3"
-            tools:layout_editor_absoluteY="64dp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_margin="8dp"
-            android:background="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="88dp" />
-
-        <TextView
-            android:id="@+id/tvHeading3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/tvHeading"
+            android:layout_width="187dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="64dp"
             android:fontFamily="@font/satoshi_medium"
-            android:text="@string/head_3"
+            android:text="@string/head_1"
             android:textColor="@color/black"
             android:textSize="16dp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="95dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent" />
 
+        <TextView
+            android:id="@+id/price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="188dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/satoshi_bold"
+            android:text="Rp. 100.000"
+            android:textColor="@color/price"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/title_image"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/title_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a"
+            app:layout_constraintEnd_toStartOf="@+id/rating1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/rating1"
+            android:layout_width="129dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="147dp"
+            android:fontFamily="@font/satoshi_regular"
+            android:text="☆4.9(189)"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/title_image"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeading"
+            tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

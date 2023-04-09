@@ -14,13 +14,13 @@ class HomePageActivity : AppCompatActivity() {
         binding = ActivityHomepageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        replaceFragment(beranda()) // default
+        replaceFragment(Beranda()) // default
 
-        binding.bottomNavigationBar.setOnItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.beranda -> replaceFragment(beranda())
-                R.id.mycourse -> replaceFragment(Mycourse())
-                R.id.akun -> replaceFragment(akun())
+        binding.bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.title) {
+                "Beranda" -> replaceFragment(Beranda())
+                "Pelatihan Saya" -> replaceFragment(Mycourse())
+                "Akun" -> replaceFragment(Akun())
                 else -> { }
             }
             true
@@ -29,7 +29,7 @@ class HomePageActivity : AppCompatActivity() {
 
     private fun replaceFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
-            .replace(R.id.frameLayout, fragment)
+            .replace(R.id.home, fragment)
             .commit()
     }
 }
