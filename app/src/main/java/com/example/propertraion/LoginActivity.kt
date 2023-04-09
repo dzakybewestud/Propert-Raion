@@ -17,37 +17,34 @@ import com.google.android.material.button.MaterialButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 
-class LoginActivity : AppCompatActivity() {
+open class LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
 
 
     private lateinit var username: EditText  //username box in login activity
     private lateinit var password: EditText  //Password box in login activity
-    private lateinit var btn_login: Button //Login Button in Login Activity
-    lateinit var btn_googleLogin: MaterialButton
+    private lateinit var btnLogin: Button //Login Button in Login Activity
+    private lateinit var btnGoogleLogin: MaterialButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        btn_login = findViewById(R.id.btn_masuk)
+
+
+        btnLogin = findViewById(R.id.btn_masuk)
         username = findViewById(R.id.et_email)
         password = findViewById(R.id.et_password)
-        btn_googleLogin = findViewById(R.id.btn_googleLogin)
+        btnGoogleLogin = findViewById(R.id.btn_googleLogin)
 
 
 
-        btn_login.setOnClickListener {
-            if (username.text.toString() == "user" && password.text.toString() == "1234"){
-                Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, DetailCourseActivity::class.java)
-                startActivity(intent)
-            } else {
-                Toast.makeText(this, "failed", Toast.LENGTH_SHORT).show()
-            }
+        btnLogin.setOnClickListener {
+            val intent = Intent(this, DetailCourseActivity::class.java)
+            startActivity(intent)
         }
-
+        
         auth = FirebaseAuth.getInstance()
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))

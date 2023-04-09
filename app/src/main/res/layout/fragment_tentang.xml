@@ -96,6 +96,43 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="188dp"
+            android:layout_marginEnd="243dp"
+            android:fontFamily="@font/satoshi_medium"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="Rekaman"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:translationY="-0.9sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="214dp"
+            android:layout_marginEnd="44dp"
+            android:alpha="0.5"
+            android:fontFamily="@font/satoshi_regular"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="Pelatihan yang sepenuhnya menerapkan jenis pembelajaran jarak jauh melalui rekaman video"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:translationY="-0.9sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -349,6 +386,18 @@
             android:text="Tentang Instruktur"
             android:textColor="@color/black"
             android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_instruktor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="1024dp"
+            android:layout_marginEnd="296dp"
+            android:src="@drawable/iv_subbab1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

@@ -14,8 +14,10 @@ class DetailCourseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_course)
 
-        var pager = findViewById<ViewPager2>(R.id.vpager2_detailcourse)
-        var tabL = findViewById<TabLayout>(R.id.tabLayout_detailcourse)
+
+
+        val pager = findViewById<ViewPager2>(R.id.vpager2_detailcourse)
+        val tabL = findViewById<TabLayout>(R.id.tabLayout_detailcourse)
         pager.adapter = DetailCourseAdapter(supportFragmentManager, lifecycle)
 
         TabLayoutMediator(tabL, pager){

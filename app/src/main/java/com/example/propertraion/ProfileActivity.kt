@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -20,7 +22,7 @@ class ProfileActivity : AppCompatActivity() {
         val email = intent.getStringExtra("email")
         val displayName = intent.getStringExtra("name")
 
-        findViewById<TextView>(R.id.textView3).text = email + "\n" + displayName
+        findViewById<TextView>(R.id.textView3).text = "$email\n$displayName"
 
 
         btLogout = findViewById(R.id.bt_logout)

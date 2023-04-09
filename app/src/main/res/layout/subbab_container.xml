@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="12dp">
 
     <ImageView
         android:id="@+id/iv_subbab"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="21dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
         android:src="@drawable/iv_subbab1"
         app:layout_constraintEnd_toStartOf="@+id/tv_subbab"
@@ -23,12 +24,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="240dp"
         android:fontFamily="@font/satoshi_medium"
         android:text="Introduction"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/iv_subbab"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,14 +37,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="227dp"
         android:alpha="0.4"
         android:fontFamily="@font/satoshi_regular"
         android:gravity="top"
-        android:text="durasi TextView"
+        android:text="mm:dd Menit"
         android:textColor="@color/black"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/iv_subbab"
         app:layout_constraintTop_toBottomOf="@+id/tv_subbab" />
 </androidx.constraintlayout.widget.ConstraintLayout>
